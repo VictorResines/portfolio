@@ -1,88 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single-page developer portfolio</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  adamkeyes
+    <link rel="stylesheet" href="style.css" />
 
-  Nice to meet you! I'm Adam Keyes.
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Based in the UK, I'm a front-end developer passionate about 
-  building accessible web apps that users love.
+    <title>Frontend Mentor | Single-page developer portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="logo">victorresines</p>
+        <img
+          class="profile-picture"
+          src="./assets/images/image-profile-desktop.webp"
+          alt="profile picture Adam Keyes"
+        />
+      </div>
+    </header>
 
-  Contact me
+    <main>
+      <div id="hero">
+        <div class="container hero">
+          <div class="oval oval-instance1"></div>
+          <div class="oval oval-instance2"></div>
+          <div class="oval oval-instance3"></div>
+          <div class="oval oval-instance4"></div>
+          <div class="oval oval-instance5"></div>
+          <div class="circle"></div>
+          <h1 class="main-heading">
+            Nice to meet you!<br />
+            I'm <span class="name">Víctor Resines</span>.
+          </h1>
+          <p class="hero-text">
+            Based in Madrid, I'm a front-end developer passionate about building
+            accessible web apps that users love.
+          </p>
+          <a class="button" href="#contact-me">Contact me</a>
 
-  HTML
-  4 Years Experience
+          <!-- <img
+            class="profile-picture"
+            src="./assets/images/image-profile-desktop.webp"
+            alt="profile picture Adam Keyes"
+          /> -->
+        </div>
+      </div>
 
-  CSS
-  4 Years Experience
+      <section id="skills">
+        <!-- <h2>Skills</h2> -->
+        <div class="container skills">
+          <div class="skills-items grid-3cols">
+            <div class="skills-item">
+              <h3>HTML</h3>
+              <p>4 Years Experience</p>
+            </div>
+            <div class="skills-item">
+              <h3>CSS</h3>
+              <p>4 Years Experience</p>
+            </div>
+            <div class="skills-item">
+              <h3>JavaScript</h3>
+              <p>4 Years Experience</p>
+            </div>
+            <div class="skills-item">
+              <h3>Accessibility</h3>
+              <p>4 Years Experience</p>
+            </div>
+            <div class="skills-item">
+              <h3>React</h3>
+              <p>3 Years Experience</p>
+            </div>
+            <div class="skills-item">
+              <h3>Sass</h3>
+              <p>3 Years Experience</p>
+            </div>
+            <div class="oval-right oval-instance6"></div>
+            <div class="oval-right oval-instance7"></div>
+            <div class="oval-right oval-instance8"></div>
+            <div class="oval-right oval-instance9"></div>
+            <div class="oval-right oval-instance10"></div>
+          </div>
+        </div>
+      </section>
 
-  JavaScript
-  4 Years Experience
+      <section class="projects">
+        <div class="container">
+          <div class="projects-heading">
+            <h2>Projects</h2>
+            <a class="button">Contact me</a>
+          </div>
+          <div class="project-items grid-2cols">
+            <div class="project-item">
+              <img
+                src="./assets/images/thumbnail-project-1-large.webp"
+                class="project-img"
+                alt=""
+              />
+              <h4>Design portfolio</h4>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <ul class="project-links">
+                <li><a href="">View project</a></li>
+                <li><a href="">View code</a></li>
+              </ul>
+            </div>
+            <div class="project-item">
+              <img
+                src="./assets/images/thumbnail-project-2-large.webp"
+                class="project-img"
+                alt=""
+              />
+              <h4>E-learning landing page</h4>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <ul class="project-links">
+                <li><a href="">View project</a></li>
+                <li><a href="">View code</a></li>
+              </ul>
+            </div>
+            <div class="project-item">
+              <img
+                src="./assets/images/thumbnail-project-3-large.webp"
+                class="project-img"
+                alt=""
+              />
+              <h4>Todo web app</h4>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+              <ul class="project-links">
+                <li><a href="">View project</a></li>
+                <li><a href="">View code</a></li>
+              </ul>
+            </div>
+            <div class="project-item">
+              <img
+                src="./assets/images/thumbnail-project-4-large.webp"
+                class="project-img"
+                alt=""
+              />
+              <h4>Entertainment web app</h4>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+              <ul class="project-links">
+                <li><a href="">View project</a></li>
+                <li><a href="">View code</a></li>
+              </ul>
+            </div>
+            <div class="project-item">
+              <img
+                src="./assets/images/thumbnail-project-5-large.webp"
+                class="project-img"
+                alt=""
+              />
+              <h4>Memory Game</h4>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+              <ul class="project-links">
+                <li><a href="">View project</a></li>
+                <li><a href="">View code</a></li>
+              </ul>
+            </div>
+            <div class="project-item">
+              <img
+                src="./assets/images/thumbnail-project-6-large.webp"
+                class="project-img"
+                alt=""
+              />
+              <h4>Art gallery showcase</h4>
+              <ul class="project-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+              <ul class="project-links">
+                <li><a href="">View project</a></li>
+                <li><a href="">View code</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  Accessibility
-  4 Years Experience
+      <section id="contact-me">
+        <div class="container contact">
+          <div class="contact-text">
+            <h2>Contact</h2>
+            <p>I would love to hear about your project and how I could help.</p>
+            <p>
+              Please fill in the form, and I'll get back to you as soon as
+              possible.
+            </p>
+          </div>
+          <div class="form-container">
+            <form action="">
+              <input class="form-element" type="text" placeholder="NAME" />
 
-  React
-  3 Years Experience
+              <input class="form-element" type="email" placeholder="EMAIL" />
 
-  Sass
-  3 Years Experience
+              <input class="form-element" type="text" placeholder="MESSAGE" />
+              <a class="button form-element">Send message</a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  Projects
-
-  Contact me
-
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Contact
-
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
-
-  Name
-  Email
-  Message
-
-  Send message
-
-  adamkeyes
-
-</body>
+    <footer>
+      <div class="footer container">
+        <p class="logo">victorresines</p>
+      </div>
+    </footer>
+  </body>
 </html>
