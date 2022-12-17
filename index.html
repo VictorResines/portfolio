@@ -23,32 +23,59 @@
     <title>Frontend Mentor | Single-page developer portfolio</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <p class="logo">victorresines</p>
-        <img
-          class="profile-picture"
-          src="./assets/images/image-profile-desktop.webp"
-          alt="profile picture Adam Keyes"
-        />
-      </div>
+    <header class="container">
+      <div class="logo">adamkeyes</div>
+      <ul class="social-icons-list social-icons-list-header">
+        <a href="https://github.com/"
+          ><img
+            class="social-icon"
+            src="./assets/images/icon-github.svg"
+            alt="github icon"
+        /></a>
+        <a href="https://frontendmentos.io/">
+          <img
+            class="social-icon"
+            src="./assets/images/icon-frontend-mentor.svg"
+            alt="frontend mentor icon"
+          />
+        </a>
+        <a href="https://linkedin.com/">
+          <img
+            class="social-icon"
+            src="./assets/images/icon-linkedin.svg"
+            alt="linkedin icon"
+          />
+        </a>
+        <a href="https://twitter.com/">
+          <img
+            class="social-icon"
+            src="./assets/images/icon-twitter.svg"
+            alt="twitter icon"
+          />
+        </a>
+      </ul>
+      <img
+        class="profile-picture"
+        src="./assets/images/image-profile-desktop.webp"
+        alt="profile picture Adam Keyes"
+      />
     </header>
 
     <main>
       <div id="hero">
         <div class="container hero">
-          <div class="oval oval-instance1"></div>
-          <div class="oval oval-instance2"></div>
-          <div class="oval oval-instance3"></div>
-          <div class="oval oval-instance4"></div>
-          <div class="oval oval-instance5"></div>
+          <div class="oval oval-hero oval-instance1"></div>
+          <div class="oval oval-hero oval-instance2"></div>
+          <div class="oval oval-hero oval-instance3"></div>
+          <div class="oval oval-hero oval-instance4"></div>
+          <div class="oval oval-hero oval-instance5"></div>
           <div class="circle"></div>
           <h1 class="main-heading">
             Nice to meet you!<br />
-            I'm <span class="name">Víctor Resines</span>.
+            I'm <span class="name">Adam Keyes</span>.
           </h1>
           <p class="hero-text">
-            Based in Madrid, I'm a front-end developer passionate about building
+            Based in the UK, I'm a front-end developer passionate about building
             accessible web apps that users love.
           </p>
           <a class="button" href="#contact-me">Contact me</a>
@@ -89,11 +116,11 @@
               <h3>Sass</h3>
               <p>3 Years Experience</p>
             </div>
-            <div class="oval-right oval-instance6"></div>
-            <div class="oval-right oval-instance7"></div>
-            <div class="oval-right oval-instance8"></div>
-            <div class="oval-right oval-instance9"></div>
-            <div class="oval-right oval-instance10"></div>
+            <div class="oval oval-skills oval-instance6"></div>
+            <div class="oval oval-skills oval-instance7"></div>
+            <div class="oval oval-skills oval-instance8"></div>
+            <div class="oval oval-skills oval-instance9"></div>
+            <div class="oval oval-skills oval-instance10"></div>
           </div>
         </div>
       </section>
@@ -212,30 +239,72 @@
       <section id="contact-me">
         <div class="container contact">
           <div class="contact-text">
-            <h2>Contact</h2>
-            <p>I would love to hear about your project and how I could help.</p>
+            <h2 class="contact-heading">Contact</h2>
             <p>
+              I would love to hear about your project and how I could help.
               Please fill in the form, and I'll get back to you as soon as
               possible.
             </p>
           </div>
           <div class="form-container">
-            <form action="">
+            <form id="contact-me" action="">
               <input class="form-element" type="text" placeholder="NAME" />
 
               <input class="form-element" type="email" placeholder="EMAIL" />
 
-              <input class="form-element" type="text" placeholder="MESSAGE" />
-              <a class="button form-element">Send message</a>
+              <textarea
+                class="form-element"
+                rows="4"
+                cols="50"
+                form="contact-me"
+                placeholder="MESSAGE"
+                resize="none"
+              >
+              </textarea>
+              <a class="button">Send message</a>
             </form>
           </div>
+          <div class="oval oval-contact oval-instance11"></div>
+          <div class="oval oval-contact oval-instance12"></div>
+          <div class="oval oval-contact oval-instance13"></div>
+          <div class="oval oval-contact oval-instance14"></div>
+          <div class="oval oval-contact oval-instance15"></div>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="footer container">
-        <p class="logo">victorresines</p>
+        <div class="logo">adamkeyes</div>
+        <ul class="social-icons-list social-icons-list-footer">
+          <a href="https://github.com/"
+            ><img
+              class="social-icon"
+              src="./assets/images/icon-github.svg"
+              alt="github icon"
+          /></a>
+          <a href="https://frontendmentos.io/">
+            <img
+              class="social-icon"
+              src="./assets/images/icon-frontend-mentor.svg"
+              alt="frontend mentor icon"
+            />
+          </a>
+          <a href="https://linkedin.com/">
+            <img
+              class="social-icon"
+              src="./assets/images/icon-linkedin.svg"
+              alt="linkedin icon"
+            />
+          </a>
+          <a href="https://twitter.com/">
+            <img
+              class="social-icon"
+              src="./assets/images/icon-twitter.svg"
+              alt="twitter icon"
+            />
+          </a>
+        </ul>
       </div>
     </footer>
   </body>

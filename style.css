@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #151515;
   color: #d9d9d9;
@@ -58,6 +62,9 @@ ul {
 header {
   margin-bottom: 20px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .logo {
@@ -66,6 +73,24 @@ header {
   line-height: 32px;
   letter-spacing: -0.44px;
   color: #fff;
+}
+
+.social-icons-list {
+  display: flex;
+  gap: 30px;
+}
+
+.social-icons-list-header {
+  margin-right: 30px;
+}
+
+.social-icons-list-footer {
+  margin-right: 0px;
+}
+
+.social-icon {
+  width: auto;
+  height: 20px;
 }
 
 .hero {
@@ -132,18 +157,19 @@ header {
   border: solid 1px rgba(255, 255, 255, 0.2);
   z-index: -1;
   position: absolute;
+}
+
+.oval-hero {
   left: -20%;
 }
 
-.oval-right {
-  width: 530px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0);
-  border: solid 1px rgba(255, 255, 255, 0.2);
-  z-index: -1;
-  position: absolute;
+.oval-skills {
   right: -35%;
+}
+
+.oval-contact {
+  left: -33%;
+  z-index: 1;
 }
 
 .oval-instance1 {
@@ -184,6 +210,26 @@ header {
 
 .oval-instance10 {
   bottom: -40px;
+}
+
+.oval-instance11 {
+  bottom: 100px;
+}
+
+.oval-instance12 {
+  bottom: 90px;
+}
+
+.oval-instance13 {
+  bottom: 80px;
+}
+
+.oval-instance14 {
+  bottom: 70px;
+}
+
+.oval-instance15 {
+  bottom: 60px;
 }
 
 .skills {
@@ -251,6 +297,13 @@ footer {
   justify-content: space-between;
 }
 
+.contact-text {
+  width: 40%;
+}
+
+.contact-heading {
+  margin-bottom: 36px;
+}
 form {
   /* background-color: #4ee1a0; */
   display: flex;
@@ -261,13 +314,23 @@ form {
 .form-element {
   width: 400px;
   background-color: #242424;
-  color: #d9d9d9;
+  color: rgba(255, 255, 255, 0.5);
   border: none;
   border-bottom: 1px solid #d9d9d9;
   font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.22px;
+}
+
+textarea {
+  resize: none;
 }
 
 .footer {
   border-top: 1px solid #fff;
   padding: 50px 0 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
