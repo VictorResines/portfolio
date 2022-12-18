@@ -292,7 +292,7 @@ footer {
 }
 
 .contact {
-  padding-top: 100px;
+  padding: 100px 0 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -304,15 +304,23 @@ footer {
 .contact-heading {
   margin-bottom: 36px;
 }
+
 form {
   /* background-color: #4ee1a0; */
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-end;
 }
 
 .form-element {
-  width: 400px;
+  width: 445px;
   background-color: #242424;
   color: rgba(255, 255, 255, 0.5);
   border: none;
@@ -323,13 +331,20 @@ form {
   letter-spacing: -0.22px;
 }
 
+label {
+  display: block;
+  font-size: 16px;
+  margin-left: 25px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 textarea {
   resize: none;
 }
 
 .footer {
   border-top: 1px solid #fff;
-  padding: 50px 0 92px;
+  padding: 25px 0 92px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;

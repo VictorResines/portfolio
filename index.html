@@ -248,21 +248,30 @@
           </div>
           <div class="form-container">
             <form id="contact-me" action="">
-              <input class="form-element" type="text" placeholder="NAME" />
-
-              <input class="form-element" type="email" placeholder="EMAIL" />
-
-              <textarea
-                class="form-element"
-                rows="4"
-                cols="50"
-                form="contact-me"
-                placeholder="MESSAGE"
-                resize="none"
-              >
-              </textarea>
-              <a class="button">Send message</a>
+              <div class="form-field">
+                <label for="name">NAME</label>
+                <input id='name' class="form-element" type="text" />
+              </div>
+              <div class="form field">
+                <label for="email">EMAIL</label>
+                <input id='email' class="form-element" type="email" />
+              </div>
+              <div class="form-field">
+                <label for="message">MESSAGE</label>
+                <textarea
+                id="message"
+                  class="form-element"
+                  rows="3"
+                  cols="50"
+                  form="contact-me"
+                  placeholder="MESSAGE"
+                  resize="none"
+                >
+                </textarea>
+              </div>
+              
             </form>
+            <a class="button button-right">Send message</a>
           </div>
           <div class="oval oval-contact oval-instance11"></div>
           <div class="oval oval-contact oval-instance12"></div>
