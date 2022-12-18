@@ -128,6 +128,10 @@ header {
   text-decoration: none;
 }
 
+.button:hover {
+  color: #4ee1a0;
+}
+
 .profile-picture {
   width: 445px;
   height: auto;
@@ -258,6 +262,27 @@ header {
   margin-top: 140px;
   padding-bottom: 140px;
 }
+.project-img-box {
+  position: relative;
+}
+
+.project-img-box:hover .overlay {
+  opacity: .75;
+}
+
+.overlay {
+  background-color: #151515;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: .5s ease;
+}
 
 .projects-heading {
   margin-bottom: 80px;
@@ -277,8 +302,20 @@ header {
 }
 
 .project-links {
+  display: none;
   text-decoration: underline;
   font-size: 14px;
+}
+
+.project-links-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 60px;
+}
 }
 
 a {
