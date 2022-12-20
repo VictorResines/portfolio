@@ -20,6 +20,16 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/552ca25ebe.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Frontend Mentor | Single-page developer portfolio</title>
   </head>
   <body>
@@ -310,21 +320,61 @@
           </div>
           <div class="form-container">
             <form id="contact-me" action="">
-              <div class="form-field">
-                <input id="name" class="form-element" type="text" placeholder="NAME" />
+              <div class="form-item">
+                <div class="form-field success">
+                  <input
+                    id="name"
+                    class="form-element"
+                    type="text"
+                    placeholder="NAME"
+                  />
+                  <span class="material-symbols-outlined error-icon">
+                    error
+                  </span>
+                  <span class="material-symbols-outlined check-icon">
+                    check_circle
+                  </span>
+                </div>
+                <small class="error-text">Please enter your name</small>
               </div>
-              <div class="form-field">
-                <input id="email" class="form-element" type="email" placeholder="EMAIL" />
+              <div class="form-item">
+                <div class="form-field error">
+                  <input
+                    id="email"
+                    class="form-element"
+                    type="email"
+                    placeholder="EMAIL"
+                  />
+                  <span class="material-symbols-outlined error-icon">
+                    error
+                  </span>
+                  <span class="material-symbols-outlined check-icon">
+                    check_circle
+                  </span>
+                </div>
+                <small class="error-text"
+                  >Please enter a valid email address</small
+                >
               </div>
-              <div class="form-field">
-                <textarea
-                id="message"
-                class="form-element"
-                rows="3"
-                cols="50"
-                placeholder="MESSAGE"
-                form="contact-me"
-                ></textarea>
+
+              <div class="form-item">
+                <div class="form-field">
+                  <textarea
+                    id="message"
+                    class="form-element"
+                    rows="3"
+                    cols="50"
+                    placeholder="MESSAGE"
+                    form="contact-me"
+                  ></textarea>
+                  <span class="material-symbols-outlined error-icon">
+                    error
+                  </span>
+                  <span class="material-symbols-outlined check-icon">
+                    check_circle
+                  </span>
+                </div>
+                <small class="error-text">Please enter your message</small>
               </div>
             </form>
             <a class="button button-right">Send message</a>
@@ -348,7 +398,7 @@
               src="./assets/images/icon-github.svg"
               alt="github icon"
           /></a>
-          <a href="https://frontendmentos.io/">
+          <a href="https://frontendmentor.io/">
             <img
               class="social-icon"
               src="./assets/images/icon-frontend-mentor.svg"
