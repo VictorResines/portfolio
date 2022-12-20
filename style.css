@@ -314,6 +314,7 @@ header {
 
 .project-tech {
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .project-links {
@@ -433,12 +434,12 @@ label {
 }
 
 .form-item small {
-	color: #ff6f5b;
-	visibility: hidden;
+  color: #ff6f5b;
+  visibility: hidden;
 }
 
 .form-item.error small {
-	visibility: visible;
+  visibility: visible;
 }
 
 textarea {
