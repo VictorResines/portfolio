@@ -1,11 +1,15 @@
 const form = document.getElementById("contact-me");
-const fname = document.getElementById("name");
+console.log(form);
+const fname = document.getElementById("fname");
+console.log(fname);
 const email = document.getElementById("email");
+console.log(email);
 const message = document.getElementById("message");
+console.log(message);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
+  console.log("hecho");
   checkInputs();
 });
 
@@ -16,9 +20,11 @@ function checkInputs() {
   const messageValue = message.value;
 
   if (fnameValue === "") {
+    console.log("Please enter your name");
     setErrorFor(fname, "Please enter your name");
   } else {
     setSuccessFor(fname);
+    console.log("Success");
   }
 
   if (emailValue === "") {
@@ -38,14 +44,18 @@ function checkInputs() {
 
 function setErrorFor(input, message) {
   const formField = input.parentElement;
-  const small = formField.querySelector("small");
-  formField.className = "form-field error";
+  const formItem = input.parentElement.parentElement;
+  const small = formItem.querySelector("small");
+  formItem.className = "form-item error";
+  formField.className ='form-field error'
   small.innerText = message;
 }
 
 function setSuccessFor(input) {
   const formField = input.parentElement;
-  formField.classname = "form-control success";
+  const formItem = input.parentElement.parentElement;
+  formField.className = "form-field success";
+  formItem.className = "form-item";
 }
 
 function isEmail(email) {

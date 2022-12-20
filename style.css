@@ -115,6 +115,8 @@ header {
 }
 
 .button {
+  background-color: transparent;
+  border: none;
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
@@ -325,7 +327,7 @@ a {
   color: #4ee1a0;
 }
 
-#contact-me,
+#contact-me-section,
 footer {
   background-color: #242424;
 }
@@ -367,6 +369,10 @@ form {
   border-bottom: 1px solid #d9d9d9;
   display: flex;
   align-items: flex-start;
+}
+
+.form-button {
+  text-align: end;
 }
 
 .error {
@@ -424,6 +430,15 @@ label {
   color: #ff6f5b;
   text-align: right;
   font-size: 12px;
+}
+
+.form-item small {
+	color: #ff6f5b;
+	visibility: hidden;
+}
+
+.form-item.error small {
+	visibility: visible;
 }
 
 textarea {

@@ -308,7 +308,7 @@
         </div>
       </section>
 
-      <section id="contact-me">
+      <section id="contact-me-section">
         <div class="container contact">
           <div class="contact-text">
             <h2 class="contact-heading">Contact</h2>
@@ -321,9 +321,9 @@
           <div class="form-container">
             <form id="contact-me" action="">
               <div class="form-item">
-                <div class="form-field success">
+                <div class="form-field">
                   <input
-                    id="name"
+                    id="fname"
                     class="form-element"
                     type="text"
                     placeholder="NAME"
@@ -338,7 +338,7 @@
                 <small class="error-text">Please enter your name</small>
               </div>
               <div class="form-item">
-                <div class="form-field error">
+                <div class="form-field">
                   <input
                     id="email"
                     class="form-element"
@@ -356,7 +356,6 @@
                   >Please enter a valid email address</small
                 >
               </div>
-
               <div class="form-item">
                 <div class="form-field">
                   <textarea
@@ -376,8 +375,12 @@
                 </div>
                 <small class="error-text">Please enter your message</small>
               </div>
+              <div class="form-button">
+                <button type="submit" form="contact-me" class="button"
+                  >Send message</button
+                >
+              </div>
             </form>
-            <a class="button button-right">Send message</a>
           </div>
           <div class="oval oval-contact oval-instance11"></div>
           <div class="oval oval-contact oval-instance12"></div>
@@ -422,5 +425,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
