@@ -42,7 +42,7 @@
             src="./assets/images/icon-github.svg"
             alt="github icon"
         /></a>
-        <a href="https://frontendmentos.io/">
+        <a href="https://frontendmentor.io/">
           <img
             class="social-icon"
             src="./assets/images/icon-frontend-mentor.svg"
@@ -324,6 +324,7 @@
           </div>
           <div class="form-container">
             <form id="contact-me" action="">
+              <input type="hidden" name="contact_number" />
               <div class="form-item">
                 <div class="form-field">
                   <input
@@ -331,6 +332,7 @@
                     class="form-element"
                     type="text"
                     placeholder="NAME"
+                    name="from_name"
                   />
                   <span class="material-symbols-outlined error-icon">
                     error
@@ -348,6 +350,7 @@
                     class="form-element"
                     type="email"
                     placeholder="EMAIL"
+                    name="user_email"
                   />
                   <span class="material-symbols-outlined error-icon">
                     error
@@ -369,6 +372,7 @@
                     cols="50"
                     placeholder="MESSAGE"
                     form="contact-me"
+                    name="message"
                   ></textarea>
                   <span class="material-symbols-outlined error-icon">
                     error
@@ -429,6 +433,19 @@
         </ul>
       </div>
     </footer>
+    <!-- Load EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- we initialize the SDK with our public key -->
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("wvCvw-LnJC8KtneMC");
+      })();
+    </script>
 
     <script src="./script.js"></script>
   </body>

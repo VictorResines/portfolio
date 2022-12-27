@@ -1,16 +1,26 @@
 const form = document.getElementById("contact-me");
-console.log(form);
 const fname = document.getElementById("fname");
-console.log(fname);
 const email = document.getElementById("email");
-console.log(email);
 const message = document.getElementById("message");
-console.log(message);
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
+
   console.log("hecho");
   checkInputs();
+
+  this.contact_number.value = (Math.random() * 100000) | 0;
+  // these IDs from the previous steps
+  emailjs.sendForm("contact_service", "contact_form", this).then(
+    function () {
+      console.log("SUCCESS!");
+      alert("Your message has been sent! =)");
+    },
+    function (error) {
+      console.log("FAILED...", error);
+      alert("Your message can't be sent");
+    }
+  );
 });
 
 function checkInputs() {
@@ -24,7 +34,6 @@ function checkInputs() {
     setErrorFor(fname, "Please enter your name");
   } else {
     setSuccessFor(fname);
-    console.log("Success");
   }
 
   if (emailValue === "") {
@@ -47,7 +56,7 @@ function setErrorFor(input, message) {
   const formItem = input.parentElement.parentElement;
   const small = formItem.querySelector("small");
   formItem.className = "form-item error";
-  formField.className ='form-field error'
+  formField.className = "form-field error";
   small.innerText = message;
 }
 
