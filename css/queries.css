@@ -1,0 +1,19 @@
+@media (max-width: 1110px) {
+  .container {
+    max-width: 90%;
+    margin: 0 5rem;
+    /* background-color: brown; */
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .profile-picture2 {
+    min-width: 30rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}

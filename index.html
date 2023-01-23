@@ -11,7 +11,8 @@
       href="./assets/images/r (40 × 40 px).png"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,67 +39,84 @@
     <title>Victor Resines | Frontend developer portfolio</title>
   </head>
   <body>
-    <header class="container">
+    <header class="header container">
       <div class="logo">resines.dev</div>
-      <ul class="social-icons-list social-icons-list-header">
-        <a href="https://github.com/VictorResines" target="_blank"
-          ><img
-            class="social-icon"
-            src="./assets/images/icon-github.svg"
-            alt="github icon"
-        /></a>
-        <a target="_blank" href="https://www.frontendmentor.io/profile/VFull">
-          <img
-            class="social-icon"
-            src="./assets/images/icon-frontend-mentor.svg"
-            alt="frontend mentor icon"
-          />
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/victorresines/">
-          <img
-            class="social-icon"
-            src="./assets/images/icon-linkedin.svg"
-            alt="linkedin icon"
-          />
-        </a>
-        <a target="_blank" href="https://twitter.com/VictorResines">
-          <img
-            class="social-icon"
-            src="./assets/images/icon-twitter.svg"
-            alt="twitter icon"
-          />
-        </a>
-      </ul>
-      <img
-        class="profile-picture"
-        src="./assets/images/image-profile-desktop.webp"
-        alt="profile picture Adam Keyes"
-      />
-      <img
-        class="profile-picture2"
-        src="./assets/images/Victor resines.png"
-        alt="profile picture Adam Keyes"
-      />
+
+      <nav>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about-me">About me</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact-me">Contact me</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <div id="hero">
-        <div class="container hero">
-          <div class="oval oval-hero oval-instance1"></div>
-          <div class="oval oval-hero oval-instance2"></div>
-          <div class="oval oval-hero oval-instance3"></div>
-          <div class="oval oval-hero oval-instance4"></div>
-          <div class="oval oval-hero oval-instance5"></div>
+      <section id="about-me">
+        <div class="container about-me">
+          <div class="oval oval-about-me oval-instance1"></div>
+          <div class="oval oval-about-me oval-instance2"></div>
+          <div class="oval oval-about-me oval-instance3"></div>
+          <div class="oval oval-about-me oval-instance4"></div>
+          <div class="oval oval-about-me oval-instance5"></div>
           <div class="circle"></div>
-          <h1 class="main-heading">
-            Nice to meet you!<br />
-            I'm <span class="name">Victor Resines</span>.
-          </h1>
-          <p class="hero-text">
-            Based in Madrid, I'm a front-end developer passionate about building
-            accessible web apps that users love.
-          </p>
-          <a class="button" href="#contact-me">Contact me</a>
+          <div class="about-me--textbox">
+            <h1 class="about-me--heading">
+              Nice to meet you!<br />
+              I'm <span class="about-me--name">Victor Resines</span>.
+            </h1>
+            <p class="about-me--text">
+              Based in Madrid, I'm a front-end developer passionate about
+              building accessible web apps that users love.
+            </p>
+            <div class="about-me--buttons-box">
+              <a class="button" href="#contact-me">Resume ⬇</a>
+              <a class="button" href="#contact-me">Contact ✉</a>
+            </div>
+          </div>
+          <div class="about-me--images">
+            <img
+              class="about-me--profile-picture"
+              src="./assets/images/Victor resines.png"
+              alt="profile picture Victor Resines"
+            />
+            <ul class="social-icons-list">
+              <a href="https://github.com/VictorResines" target="_blank"
+                ><img
+                  class="social-icon"
+                  src="./assets/images/icon-github.svg"
+                  alt="github icon"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.frontendmentor.io/profile/VFull"
+              >
+                <img
+                  class="social-icon"
+                  src="./assets/images/icon-frontend-mentor.svg"
+                  alt="frontend mentor icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/victorresines/"
+              >
+                <img
+                  class="social-icon"
+                  src="./assets/images/icon-linkedin.svg"
+                  alt="linkedin icon"
+                />
+              </a>
+              <a target="_blank" href="https://twitter.com/VictorResines">
+                <img
+                  class="social-icon"
+                  src="./assets/images/icon-twitter.svg"
+                  alt="twitter icon"
+                />
+              </a>
+            </ul>
+          </div>
 
           <!-- <img
             class="profile-picture"
@@ -106,11 +124,12 @@
             alt="profile picture Adam Keyes"
           /> -->
         </div>
-      </div>
+      </section>
 
       <section id="skills">
         <!-- <h2>Skills</h2> -->
         <div class="container skills">
+          <h2 class="skills--heading">Skills</h2>
           <div class="skills-items grid-3cols">
             <div class="skills-item">
               <i class="devicon-html5-plain skill-icon"></i>
@@ -201,11 +220,11 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section id="projects" class="projects">
         <div class="container">
           <div class="projects-heading">
             <h2>Projects</h2>
-            <a href="#contact-me" class="button">Contact me</a>
+            <a href="#contact-me" class="button">Contact ✉</a>
           </div>
           <div class="project-items grid-2cols">
             <div class="project-item">
@@ -378,7 +397,7 @@
         </div>
       </section>
 
-      <section id="contact-me-section">
+      <section id="contact-me" class="contact-me-section">
         <div class="container contact">
           <div class="contact-text">
             <h2 class="contact-heading">Contact</h2>
@@ -451,7 +470,7 @@
               </div>
               <div class="form-button">
                 <button type="submit" form="contact-me" class="button">
-                  Send message
+                  Send ➡
                 </button>
               </div>
             </form>
@@ -513,6 +532,6 @@
       })();
     </script>
 
-    <script src="./script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
