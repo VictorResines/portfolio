@@ -1,4 +1,18 @@
-@media (max-width: 1110px) {
+/* BELOW 1344PX (SMALLER DESKTOPS)*/
+
+/* BELOW 1200X (LANDSCAPE TABLET)*/
+
+/* BELOW 944X (TABLETS)*/
+
+/* MOBILE NAVIGATION */
+
+/* BELOW 704px (SMALLER TABLETS)*/
+
+/* BELOW 544px (PHONES)*/
+
+/* BELOW 1200X (LANDSCAPE TABLET)*/
+
+@media (max-width: 1200px) {
   .container {
     max-width: 90%;
     margin: 0 5rem;
@@ -17,3 +31,109 @@
     font-size: 3rem;
   }
 }
+
+/* BELOW 944X (TABLETS)*/
+@media (max-width: 980px) {
+  .grid-3-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5rem;
+    justify-content: space-between;
+  }
+
+  .about-me {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: max-content;
+    gap: 6rem;
+  }
+
+  .about-me__heading--desktop {
+    display: none;
+  }
+
+  .about-me__heading--mobile {
+    display: block;
+    font-size: 6rem;
+  }
+
+  .about-me__text {
+    margin-bottom: 6.5rem;
+    width: 90%;
+    display: block;
+    margin: 0 auto 4rem;
+  }
+
+  .about-me__buttons-box {
+    justify-content: center;
+  }
+
+  .about-me__images {
+    order: 1;
+    width: 90%;
+  }
+
+  .about-me__profile-picture {
+    width: 40%;
+    height: auto;
+  }
+
+  .project__links {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-text {
+    margin-bottom: 5rem;
+    width: 80%;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .nav-list {
+    display: none;
+  }
+}
+
+/* BELOW 704px (SMALLER TABLETS)*/
+
+@media (max-width: 740px) {
+  .skills--heading {
+    text-align: center;
+  }
+  .grid-3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .button--projects {
+    display: none;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+  }
+
+  .projects__heading {
+    justify-content: center;
+  }
+
+  .project__item {
+    text-align: center;
+  }
+
+  .project__tech {
+    justify-content: center;
+  }
+  .project__links {
+    justify-content: center;
+  }
+}
+
+/* BELOW 544px (PHONES)*/

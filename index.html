@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -32,12 +32,17 @@
     <header class="header container">
       <div class="logo">resines.dev</div>
 
-      <nav>
+      <nav class="nav">
         <ul class="nav-list">
           <li><a class="nav-link" href="#about-me">About me</a></li>
           <li><a class="nav-link" href="#skills">Skills</a></li>
           <li><a class="nav-link" href="#projects">Projects</a></li>
           <li><a class="nav-link" href="#contact-me">Contact me</a></li>
+        </ul>
+        <ul class="nav-language">
+          <a class="nav-language" href="#">EN</a>
+          |
+          <a class="nav-language" href="#">ES</a>
         </ul>
       </nav>
     </header>
@@ -52,7 +57,7 @@
           <div class="oval oval-about-me oval-instance5"></div>
           <div class="circle"></div>
           <div class="about-me__textbox">
-            <h1 class="about-me__heading">
+            <h1 class="about-me__heading about-me__heading--desktop">
               Nice to meet you!<br />
               I'm <span class="about-me__name">Victor Resines</span>.
             </h1>
@@ -66,6 +71,10 @@
             </div>
           </div>
           <div class="about-me__images">
+            <h1 class="about-me__heading about-me__heading--mobile">
+              Nice to meet you!<br />
+              I'm <span class="about-me__name">Victor Resines</span>.
+            </h1>
             <img
               class="about-me__profile-picture"
               src="./assets/images/Victor-resines.webp"
@@ -114,7 +123,7 @@
         <!-- <h2>Skills</h2> -->
         <div class="skills container">
           <h2 class="skills--heading">Skills</h2>
-          <div class="skills--items grid-3-cols">
+          <div class="skills--items grid grid-3-cols">
             <div class="skills--item">
               <i class="devicon-html5-plain skills--icon"></i>
               <h3>HTML</h3>
@@ -208,9 +217,9 @@
         <div class="container">
           <div class="projects__heading">
             <h2>Projects</h2>
-            <a href="#contact-me" class="button">Contact ✉</a>
+            <a href="#contact-me" class="button button--projects">Contact ✉</a>
           </div>
-          <div class="grid-2-cols">
+          <div class="grid grid-2-cols">
             <div class="project__item">
               <div class="project__img-box">
                 <img
@@ -234,8 +243,12 @@
                 <li>CSS</li>
               </ul>
               <ul class="project__links">
-                <li><a href="#" target="_blank">View project</a></li>
-                <li><a href="#" target="_blank">View code</a></li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">live</a>
+                </li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">code</a>
+                </li>
               </ul>
             </div>
             <div class="project__item">
@@ -248,10 +261,10 @@
                 <div class="project__overlay project__overlay-background"></div>
                 <ul class="project__overlay project__overlay-links">
                   <li>
-                    <a class="button" href="#" target="_blank">View project</a>
+                    <a class="button" href="#" target="_blank">live</a>
                   </li>
                   <li>
-                    <a class="button" href="#" target="_blank">View code</a>
+                    <a class="button" href="#" target="_blank">code</a>
                   </li>
                 </ul>
               </div>
@@ -261,8 +274,12 @@
                 <li>CSS</li>
               </ul>
               <ul class="project__links">
-                <li><a href="#" target="_blank">View project</a></li>
-                <li><a href="#" target="_blank">View code</a></li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">live</a>
+                </li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">code</a>
+                </li>
               </ul>
             </div>
             <div class="project__item">
@@ -275,10 +292,10 @@
                 <div class="project__overlay project__overlay-background"></div>
                 <ul class="project__overlay project__overlay-links">
                   <li>
-                    <a class="button" href="#" target="_blank">View project</a>
+                    <a class="button" href="#" target="_blank">live</a>
                   </li>
                   <li>
-                    <a class="button" href="#" target="_blank">View code</a>
+                    <a class="button" href="#" target="_blank">code</a>
                   </li>
                 </ul>
               </div>
@@ -289,8 +306,12 @@
                 <li>Javascript</li>
               </ul>
               <ul class="project__links">
-                <li><a href="#" target="_blank">View project</a></li>
-                <li><a href="#" target="_blank">View code</a></li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">live</a>
+                </li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">code</a>
+                </li>
               </ul>
             </div>
             <div class="project__item">
@@ -303,10 +324,10 @@
                 <div class="project__overlay project__overlay-background"></div>
                 <ul class="project__overlay project__overlay-links">
                   <li>
-                    <a class="button" href="#" target="_blank">View project</a>
+                    <a class="button" href="#" target="_blank">live</a>
                   </li>
                   <li>
-                    <a class="button" href="#" target="_blank">View code</a>
+                    <a class="button" href="#" target="_blank">code</a>
                   </li>
                 </ul>
               </div>
@@ -317,8 +338,12 @@
                 <li>Javascript</li>
               </ul>
               <ul class="project__links">
-                <li><a href="#" target="_blank">View project</a></li>
-                <li><a href="#" target="_blank">View code</a></li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">live</a>
+                </li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">code</a>
+                </li>
               </ul>
             </div>
             <div class="project__item">
@@ -334,7 +359,7 @@
                     <a class="button" href="#" target="_blank">View project</a>
                   </li>
                   <li>
-                    <a class="button" href="#" target="_blank">View code</a>
+                    <a class="button" href="#" target="_blank">code</a>
                   </li>
                 </ul>
               </div>
@@ -345,8 +370,12 @@
                 <li>Javascript</li>
               </ul>
               <ul class="project__links">
-                <li><a href="#" target="_blank">View project</a></li>
-                <li><a href="#" target="_blank">View code</a></li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">live</a>
+                </li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">code</a>
+                </li>
               </ul>
             </div>
             <div class="project__item">
@@ -362,7 +391,7 @@
                     <a class="button" href="#" target="_blank">View project</a>
                   </li>
                   <li>
-                    <a class="button" href="#" target="_blank">View code</a>
+                    <a class="button" href="#" target="_blank">code</a>
                   </li>
                 </ul>
               </div>
@@ -373,8 +402,12 @@
                 <li>Javascript</li>
               </ul>
               <ul class="project__links">
-                <li><a href="#" target="_blank">View project</a></li>
-                <li><a href="#" target="_blank">View code</a></li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">Live</a>
+                </li>
+                <li>
+                  <a class="project__link" href="#" target="_blank">code</a>
+                </li>
               </ul>
             </div>
           </div>
