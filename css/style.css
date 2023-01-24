@@ -164,14 +164,6 @@ h4 {
   gap: 0rem;
 }
 
-/* .about-me__textbox {
-} */
-
-.about-me__buttons-box {
-  display: flex;
-  gap: 5rem;
-}
-
 .about-me__heading {
   margin-bottom: 5rem;
 }
@@ -183,6 +175,11 @@ h4 {
 .about-me__text {
   margin-bottom: 6.5rem;
   width: 70%;
+}
+
+.about-me__buttons-box {
+  display: flex;
+  gap: 5rem;
 }
 
 .about-me__images {
@@ -307,7 +304,7 @@ h4 {
 
 /***** CONTACT ME *****/
 
-.contact-me-section,
+.contact-me,
 footer {
   background-color: #242424;
 }
@@ -326,17 +323,17 @@ footer {
   margin-bottom: 3.6rem;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
 .form-container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   align-items: flex-end;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .form-item {
@@ -390,13 +387,6 @@ form {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-label {
-  display: block;
-  font-size: 1.6rem;
-  margin-left: 2.5rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-
 .error-icon {
   display: none !important;
   color: #ff6f5b;
@@ -422,10 +412,8 @@ label {
   visibility: visible;
 }
 
-textarea {
+.textarea {
   resize: none;
-  color: #151515;
-  background-color: #fff;
 }
 
 .footer {
