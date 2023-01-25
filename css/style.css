@@ -167,7 +167,6 @@ h4 {
 .nav-language:hover,
 .nav-language:active {
   color: #38b6ff;
-
 }
 
 /***** ABOUT ME SECTION *****/
@@ -330,10 +329,9 @@ h4 {
 .project__link {
   text-decoration: none;
   color: #fff;
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
   box-shadow: 0 2px #38b6ff;
   text-transform: uppercase;
-  
 }
 
 /***** CONTACT ME *****/

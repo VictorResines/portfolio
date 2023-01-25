@@ -16,7 +16,6 @@
   .container {
     max-width: 90%;
     margin: 0 5rem;
-    /* background-color: brown; */
   }
 
   h1 {
@@ -143,9 +142,14 @@
 /* BELOW 544px (PHONES)*/
 
 @media (max-width: 544px) {
+  .container {
+    max-width: 100%;
+    margin: 0 2rem;
+  }
+
   .about-me__heading--mobile {
-    font-size: 4.5rem;
-    line-height: 5.5rem;
+    font-size: 4.2rem;
+    line-height: 5.3rem;
   }
 
   .skills {
