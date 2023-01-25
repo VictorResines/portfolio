@@ -156,11 +156,18 @@ h4 {
   color: #38b6ff;
 }
 
-.nav-language {
+.nav-language:link,
+.nav-language:visited {
   text-decoration: none;
   color: #fff;
   font-weight: 400;
   font-size: 1.2rem;
+}
+
+.nav-language:hover,
+.nav-language:active {
+  color: #38b6ff;
+
 }
 
 /***** ABOUT ME SECTION *****/
